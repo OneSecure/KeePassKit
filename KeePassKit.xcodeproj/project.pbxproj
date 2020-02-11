@@ -579,6 +579,13 @@
 		2D90B2811F35647400CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
 		2D90B2821F35647500CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
 		2D90B2831F35647500CED467 /* KPKPair_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5C62E61EC99ACC0026061E /* KPKPair_Private.h */; };
+		3AAB84ED23F30E9C002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84E623F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850123F3121A002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84E823F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850223F31234002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84EA23F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850323F3124A002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84EC23F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850423F3146E002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84E623F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850523F31494002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84EA23F30E1F002229C0 /* KissXML.framework */; };
+		3AAB850623F314BA002229C0 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAB84E823F30E1F002229C0 /* KissXML.framework */; };
 		4C059B6420D4577300655B99 /* KPKTestBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C059B6320D4577300655B99 /* KPKTestBinary.m */; };
 		4C09495F1FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C0949601FD6F5B8004F2971 /* NSData+KPKBase32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -801,10 +808,6 @@
 		4C639E551F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C639E531F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C639E561F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C639E541F6AC9AB00E6C5CD /* NSUIImage+KPKAdditions.m */; };
 		4C639E581F6AE81600E6C5CD /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C639E571F6AE81600E6C5CD /* test.pdf */; };
-		4C69040920C877C7007D0B97 /* KissXML.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA2203C40CA00C9A6C5 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4C69040B20C877F0007D0B97 /* KissXML.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = 9CED5FA4203C40DD00C9A6C5 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4C69040D20C87819007D0B97 /* KissXML.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA8203C410300C9A6C5 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4C69040F20C87835007D0B97 /* KissXML.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FAA203C411300C9A6C5 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C69D64823F2D73C007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D64623F2D6AB007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb */; };
 		4C69D64923F2D73D007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D64623F2D6AB007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb */; };
 		4C69D64A23F2D73D007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D64623F2D6AB007ABE04 /* KDB1_Password_1234_Keyfile_Kdb1HexKey.kdb */; };
@@ -1055,13 +1058,6 @@
 		9C37DECB225CB7DE002FC5BF /* KPKTestDeletedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C415D371F581D4200C08985 /* KPKTestDeletedObjects.m */; };
 		9C37DECC225CB7DE002FC5BF /* KPKTestTrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE94DD01F69885E00EE9A5A /* KPKTestTrash.m */; };
 		9C37DECD225CB7DE002FC5BF /* KPKTestUniqueBinaryNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C429FF120AC2BC9008F53B2 /* KPKTestUniqueBinaryNames.m */; };
-		9CED5FA3203C40CA00C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA2203C40CA00C9A6C5 /* KissXML.framework */; };
-		9CED5FA5203C40DD00C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA4203C40DD00C9A6C5 /* KissXML.framework */; };
-		9CED5FA9203C410300C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA8203C410300C9A6C5 /* KissXML.framework */; };
-		9CED5FAB203C411300C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FAA203C411300C9A6C5 /* KissXML.framework */; };
-		9CED5FAC203C54C800C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA2203C40CA00C9A6C5 /* KissXML.framework */; };
-		9CED5FAD203C54DA00C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA4203C40DD00C9A6C5 /* KissXML.framework */; };
-		9CED5FAE203C54E700C9A6C5 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CED5FA8203C410300C9A6C5 /* KissXML.framework */; };
 		9CED5FAF203C555600C9A6C5 /* KeePassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5CF3181BE10B650019AA81 /* KeePassKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -1080,6 +1076,62 @@
 			remoteGlobalIDString = 2D5125691E9BD24500D7EAF6;
 			remoteInfo = "KeePassKit tvOS";
 		};
+		3AAB84E523F30E1F002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DCD8DCA1E54A3A3001D9832;
+			remoteInfo = "KissXML (iOS)";
+		};
+		3AAB84E723F30E1F002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131BA1E5CEBE700189BD5;
+			remoteInfo = "KissXML (macOS)";
+		};
+		3AAB84E923F30E1F002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131D31E5CEC8300189BD5;
+			remoteInfo = "KissXML (tvOS)";
+		};
+		3AAB84EB23F30E1F002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D94131EC1E5CECC700189BD5;
+			remoteInfo = "KissXML (watchOS)";
+		};
+		3AAB84EE23F30EAD002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DCD8DC91E54A3A3001D9832;
+			remoteInfo = "KissXML (iOS)";
+		};
+		3AAB84F823F311CD002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D94131A31E5CEBE700189BD5;
+			remoteInfo = "KissXML (macOS)";
+		};
+		3AAB84FD23F311E6002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D94131BC1E5CEC8300189BD5;
+			remoteInfo = "KissXML (tvOS)";
+		};
+		3AAB84FF23F311F0002229C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D94131D51E5CECC700189BD5;
+			remoteInfo = "KissXML (watchOS)";
+		};
 		4C5CF3241BE10B650019AA81 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C5CF30F1BE10B650019AA81 /* Project object */;
@@ -1089,53 +1141,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4C69040820C8779A007D0B97 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4C69040920C877C7007D0B97 /* KissXML.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C69040A20C877D1007D0B97 /* Copy Framework */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4C69040B20C877F0007D0B97 /* KissXML.framework in Copy Framework */,
-			);
-			name = "Copy Framework";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C69040C20C877FA007D0B97 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4C69040D20C87819007D0B97 /* KissXML.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C69040E20C87822007D0B97 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4C69040F20C87835007D0B97 /* KissXML.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		2D5125251E9BCFA700D7EAF6 /* KeePassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeePassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5125671E9BD06700D7EAF6 /* KeePassKitTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeePassKitTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1143,6 +1148,7 @@
 		2D5126731E9BD29500D7EAF6 /* KeePassKitTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeePassKitTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D51273D1E9BD34900D7EAF6 /* KeePassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeePassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D51273F1E9C642D00D7EAF6 /* ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ref.c; sourceTree = "<group>"; };
+		3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KissXML.xcodeproj; path = depends/kissxml/KissXML.xcodeproj; sourceTree = "<group>"; };
 		4C059B6320D4577300655B99 /* KPKTestBinary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPKTestBinary.m; sourceTree = "<group>"; };
 		4C09495D1FD6F5B8004F2971 /* NSData+KPKBase32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+KPKBase32.h"; sourceTree = "<group>"; };
 		4C09495E1FD6F5B8004F2971 /* NSData+KPKBase32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+KPKBase32.m"; sourceTree = "<group>"; };
@@ -1448,7 +1454,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FA5203C40DD00C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB84ED23F30E9C002229C0 /* KissXML.framework in Frameworks */,
 				2D5124AE1E9BCFA700D7EAF6 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1457,7 +1463,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FAD203C54DA00C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB850423F3146E002229C0 /* KissXML.framework in Frameworks */,
 				2D8DC3901E9D0EF3004DE7BD /* KeePassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1466,7 +1472,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FA9203C410300C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB850223F31234002229C0 /* KissXML.framework in Frameworks */,
 				2D5125BA1E9BD24500D7EAF6 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1475,7 +1481,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FAE203C54E700C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB850523F31494002229C0 /* KissXML.framework in Frameworks */,
 				2D8DC3911E9D0EFC004DE7BD /* KeePassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1484,7 +1490,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FAB203C411300C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB850323F3124A002229C0 /* KissXML.framework in Frameworks */,
 				2D5126C61E9BD34900D7EAF6 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1493,7 +1499,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CED5FA3203C40CA00C9A6C5 /* KissXML.framework in Frameworks */,
+				3AAB850123F3121A002229C0 /* KissXML.framework in Frameworks */,
 				4C4FF1C91BE120D30015827B /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1502,14 +1508,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAB850623F314BA002229C0 /* KissXML.framework in Frameworks */,
 				9CED5FAF203C555600C9A6C5 /* KeePassKit.framework in Frameworks */,
-				9CED5FAC203C54C800C9A6C5 /* KissXML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAB84DF23F30E1F002229C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AAB84E623F30E1F002229C0 /* KissXML.framework */,
+				3AAB84E823F30E1F002229C0 /* KissXML.framework */,
+				3AAB84EA23F30E1F002229C0 /* KissXML.framework */,
+				3AAB84EC23F30E1F002229C0 /* KissXML.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4C0B9D871DBFB49600E66CD6 /* Streams */ = {
 			isa = PBXGroup;
 			children = (
@@ -1656,6 +1673,7 @@
 		4C5CF30E1BE10B650019AA81 = {
 			isa = PBXGroup;
 			children = (
+				3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */,
 				4CA1E49A1D8832C400100002 /* Argon2 */,
 				4C2602101DB110930069B059 /* ChaCha20 */,
 				4C11184B1DCCD93F00254E1D /* TwoFish */,
@@ -2011,7 +2029,7 @@
 				4CA1E46C1D8832BA00100002 /* argon2.h */,
 			);
 			name = include;
-			path = Argon2/include;
+			path = depends/Argon2/include;
 			sourceTree = "<group>";
 		};
 		4CA1E46D1D8832BA00100002 /* src */ = {
@@ -2031,7 +2049,7 @@
 				4CA1E4831D8832BA00100002 /* thread.h */,
 			);
 			name = src;
-			path = Argon2/src;
+			path = depends/Argon2/src;
 			sourceTree = "<group>";
 		};
 		4CA1E4701D8832BA00100002 /* blake2 */ = {
@@ -2575,13 +2593,12 @@
 				2D51245E1E9BCFA700D7EAF6 /* Sources */,
 				2D5124AD1E9BCFA700D7EAF6 /* Frameworks */,
 				2D5124AF1E9BCFA700D7EAF6 /* Headers */,
-				2D5125201E9BCFA700D7EAF6 /* Versioning */,
 				2D5125211E9BCFA700D7EAF6 /* Resources */,
-				4C69040A20C877D1007D0B97 /* Copy Framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3AAB84EF23F30EAD002229C0 /* PBXTargetDependency */,
 			);
 			name = "KeePassKit iOS";
 			productName = KeePassKit;
@@ -2595,7 +2612,6 @@
 				2D51252A1E9BD06700D7EAF6 /* Sources */,
 				2D5125521E9BD06700D7EAF6 /* Frameworks */,
 				2D5125541E9BD06700D7EAF6 /* Resources */,
-				9CED5FB1203C566300C9A6C5 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2614,13 +2630,12 @@
 				2D51256A1E9BD24500D7EAF6 /* Sources */,
 				2D5125B91E9BD24500D7EAF6 /* Frameworks */,
 				2D5125BB1E9BD24500D7EAF6 /* Headers */,
-				2D51262C1E9BD24500D7EAF6 /* Versioning */,
 				2D51262D1E9BD24500D7EAF6 /* Resources */,
-				4C69040C20C877FA007D0B97 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3AAB84FE23F311E6002229C0 /* PBXTargetDependency */,
 			);
 			name = "KeePassKit tvOS";
 			productName = KeePassKit;
@@ -2634,7 +2649,6 @@
 				2D5126361E9BD29500D7EAF6 /* Sources */,
 				2D51265E1E9BD29500D7EAF6 /* Frameworks */,
 				2D5126601E9BD29500D7EAF6 /* Resources */,
-				9CED5FB2203C566800C9A6C5 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2653,13 +2667,12 @@
 				2D5126761E9BD34900D7EAF6 /* Sources */,
 				2D5126C51E9BD34900D7EAF6 /* Frameworks */,
 				2D5126C71E9BD34900D7EAF6 /* Headers */,
-				2D5127381E9BD34900D7EAF6 /* Versioning */,
 				2D5127391E9BD34900D7EAF6 /* Resources */,
-				4C69040E20C87822007D0B97 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3AAB850023F311F0002229C0 /* PBXTargetDependency */,
 			);
 			name = "KeePassKit watchOS";
 			productName = KeePassKit;
@@ -2673,13 +2686,12 @@
 				4C5CF3131BE10B650019AA81 /* Sources */,
 				4C5CF3141BE10B650019AA81 /* Frameworks */,
 				4C5CF3151BE10B650019AA81 /* Headers */,
-				4C7B635B1C0CAEDE00D7038C /* Versioning */,
 				4C5CF3161BE10B650019AA81 /* Resources */,
-				4C69040820C8779A007D0B97 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3AAB84F923F311CD002229C0 /* PBXTargetDependency */,
 			);
 			name = "KeePassKit macOS";
 			productName = KeePassKit;
@@ -2693,7 +2705,6 @@
 				4C5CF31E1BE10B650019AA81 /* Sources */,
 				4C5CF31F1BE10B650019AA81 /* Frameworks */,
 				4C5CF3201BE10B650019AA81 /* Resources */,
-				9CED5FB0203C564F00C9A6C5 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2743,6 +2754,12 @@
 			mainGroup = 4C5CF30E1BE10B650019AA81;
 			productRefGroup = 4C5CF3191BE10B650019AA81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AAB84DF23F30E1F002229C0 /* Products */;
+					ProjectRef = 3AAB84DE23F30E1F002229C0 /* KissXML.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C5CF3171BE10B650019AA81 /* KeePassKit macOS */,
@@ -2755,6 +2772,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AAB84E623F30E1F002229C0 /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 3AAB84E523F30E1F002229C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AAB84E823F30E1F002229C0 /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 3AAB84E723F30E1F002229C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AAB84EA23F30E1F002229C0 /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 3AAB84E923F30E1F002229C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AAB84EC23F30E1F002229C0 /* KissXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KissXML.framework;
+			remoteRef = 3AAB84EB23F30E1F002229C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D5125211E9BCFA700D7EAF6 /* Resources */ = {
@@ -2889,114 +2937,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2D5125201E9BCFA700D7EAF6 /* Versioning */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Versioning;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "git=`sh /etc/profile; which git`\nbranch_name=`$git symbolic-ref HEAD | sed -e 's,.*/\\\\(.*\\\\),\\\\1,'`\ngit_count=`$git rev-list $branch_name |wc -l | sed 's/^ *//;s/ *$//'`\nsimple_branch_name=`$git rev-parse --abbrev-ref HEAD`\n\nbuild_number=\"${git_count}\"\nif [ $CONFIGURATION != \"Release\" ]; then\nbuild_number+=\"-$simple_branch_name\"\nfi\n\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\ndsym_plist=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$plist\"\nif [ -f \"$DSYM_INFO_PLIST\" ] ; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$dsym_plist\"\nfi";
-			showEnvVarsInLog = 0;
-		};
-		2D51262C1E9BD24500D7EAF6 /* Versioning */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Versioning;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "git=`sh /etc/profile; which git`\nbranch_name=`$git symbolic-ref HEAD | sed -e 's,.*/\\\\(.*\\\\),\\\\1,'`\ngit_count=`$git rev-list $branch_name |wc -l | sed 's/^ *//;s/ *$//'`\nsimple_branch_name=`$git rev-parse --abbrev-ref HEAD`\n\nbuild_number=\"${git_count}\"\nif [ $CONFIGURATION != \"Release\" ]; then\nbuild_number+=\"-$simple_branch_name\"\nfi\n\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\ndsym_plist=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$plist\"\nif [ -f \"$DSYM_INFO_PLIST\" ] ; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$dsym_plist\"\nfi";
-			showEnvVarsInLog = 0;
-		};
-		2D5127381E9BD34900D7EAF6 /* Versioning */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Versioning;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "git=`sh /etc/profile; which git`\nbranch_name=`$git symbolic-ref HEAD | sed -e 's,.*/\\\\(.*\\\\),\\\\1,'`\ngit_count=`$git rev-list $branch_name |wc -l | sed 's/^ *//;s/ *$//'`\nsimple_branch_name=`$git rev-parse --abbrev-ref HEAD`\n\nbuild_number=\"${git_count}\"\nif [ $CONFIGURATION != \"Release\" ]; then\nbuild_number+=\"-$simple_branch_name\"\nfi\n\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\ndsym_plist=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$plist\"\nif [ -f \"$DSYM_INFO_PLIST\" ] ; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$dsym_plist\"\nfi";
-			showEnvVarsInLog = 0;
-		};
-		4C7B635B1C0CAEDE00D7038C /* Versioning */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Versioning;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "git=`sh /etc/profile; which git`\nbranch_name=`$git symbolic-ref HEAD | sed -e 's,.*/\\\\(.*\\\\),\\\\1,'`\ngit_count=`$git rev-list $branch_name |wc -l | sed 's/^ *//;s/ *$//'`\nsimple_branch_name=`$git rev-parse --abbrev-ref HEAD`\n\nbuild_number=\"${git_count}\"\nif [ $CONFIGURATION != \"Release\" ]; then\nbuild_number+=\"-$simple_branch_name\"\nfi\n\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\ndsym_plist=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$plist\"\nif [ -f \"$DSYM_INFO_PLIST\" ] ; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_number\" \"$dsym_plist\"\nfi";
-			showEnvVarsInLog = 0;
-		};
-		9CED5FB0203C564F00C9A6C5 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/KissXML.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		9CED5FB1203C566300C9A6C5 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/KissXML.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		9CED5FB2203C566800C9A6C5 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/KissXML.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D51245E1E9BCFA700D7EAF6 /* Sources */ = {
@@ -3553,6 +3493,26 @@
 			target = 2D5125691E9BD24500D7EAF6 /* KeePassKit tvOS */;
 			targetProxy = 2D8DC38E1E9D0E75004DE7BD /* PBXContainerItemProxy */;
 		};
+		3AAB84EF23F30EAD002229C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KissXML (iOS)";
+			targetProxy = 3AAB84EE23F30EAD002229C0 /* PBXContainerItemProxy */;
+		};
+		3AAB84F923F311CD002229C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KissXML (macOS)";
+			targetProxy = 3AAB84F823F311CD002229C0 /* PBXContainerItemProxy */;
+		};
+		3AAB84FE23F311E6002229C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KissXML (tvOS)";
+			targetProxy = 3AAB84FD23F311E6002229C0 /* PBXContainerItemProxy */;
+		};
+		3AAB850023F311F0002229C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "KissXML (watchOS)";
+			targetProxy = 3AAB84FF23F311F0002229C0 /* PBXContainerItemProxy */;
+		};
 		4C5CF3251BE10B650019AA81 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C5CF3171BE10B650019AA81 /* KeePassKit macOS */;
@@ -3583,6 +3543,7 @@
 		2D5125231E9BCFA700D7EAF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -3591,10 +3552,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3613,6 +3571,7 @@
 		2D5125241E9BCFA700D7EAF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -3621,10 +3580,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3644,10 +3600,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3662,10 +3615,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3686,10 +3636,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3716,10 +3663,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3739,10 +3683,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hicknhacksoftware.KeePassKitTests;
@@ -3757,10 +3698,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hicknhacksoftware.KeePassKitTests;
@@ -3781,10 +3719,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3811,10 +3746,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3953,10 +3885,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3982,10 +3911,7 @@
 				DYLIB_COMPATIBILITY_VERSION = "$(DYLIB_COMPATIBILITY_VERSION)";
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KeePassKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4004,10 +3930,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -4021,10 +3944,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KeePassKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;

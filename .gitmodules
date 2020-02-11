@@ -1,3 +1,7 @@
 [submodule "depends/Argon2"]
 	path = depends/Argon2
 	url = https://github.com/P-H-C/phc-winner-argon2.git
+[submodule "depends/kissxml"]
+	path = depends/kissxml
+	url = https://github.com/robbiehanson/KissXML.git
+	branch = master
