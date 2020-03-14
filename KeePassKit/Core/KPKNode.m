@@ -141,7 +141,7 @@
 }
 
 - (NSString*)description {
-  return [NSString stringWithFormat:@"{%@, image=%ld, title=%@, parent=%@}", self.class, self.iconId, self.title, self.parent.title];
+  return [NSString stringWithFormat:@"{%@, image=%ld, title=%@, parent=%@}", self.class, (long) self.iconId, self.title, self.parent.title];
 }
 
 #pragma mark Properties

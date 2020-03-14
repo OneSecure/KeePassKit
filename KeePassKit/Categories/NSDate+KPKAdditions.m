@@ -147,14 +147,14 @@ static NSCalendar *_gregorianCalendar(void) {
 #else
 
   NSDateComponents *components = [[NSDateComponents alloc] init];
-  NSUInteger year, month, day, hour, minute, second;
+  long year, month, day, hour, minute, second;
   sscanf([string cStringUsingEncoding:NSUTF8StringEncoding], "%ld-%ld-%ldT%ld:%ld:%ldZ", &year, &month, &day, &hour, &minute, &second);
-  components.year = year;
-  components.month = month;
-  components.day = day;
-  components.hour = hour;
-  components.minute = minute;
-  components.second = second;
+  components.year = (NSUInteger) year;
+  components.month = (NSUInteger) month;
+  components.day = (NSUInteger) day;
+  components.hour = (NSUInteger) hour;
+  components.minute = (NSUInteger) minute;
+  components.second = (NSUInteger) second;
   components.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
   components.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
 
