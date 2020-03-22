@@ -9,7 +9,19 @@
 #import "KPKOTPGenerator.h"
 #import <CommonCrypto/CommonCrypto.h>
 
-@implementation NSData (KPKIntegerConversion)
+static NSUInteger kKPKOTPPinDigitModulo[] = {
+  0,
+  10,
+  100,
+  1000,
+  10000,
+  100000,
+  1000000,
+  10000000,
+  100000000
+};
+
+@implementation NSData (KPKOTPDataConversion)
 
 - (NSUInteger)unsignedInteger {
   /*
@@ -27,51 +39,107 @@
 #else
   NSUInteger beNumber = (NSUInteger)CFSwapInt32BigToHost(number);
 #endif
-
+  
   if(beNumber != number) {
     beNumber >>= (8 * (sizeof(NSUInteger) - self.length));
   }
   return beNumber;
 }
 
-- (NSUInteger)unsignedIntegerFromIndex:(NSInteger)index {
-  NSAssert(index < self.length, @"Index out of bounds!");
-  return [self unsignedIntegerFromRange:NSMakeRange(index, MIN(index + sizeof(NSUInteger), self.length - index))];
-}
-
-- (NSUInteger)unsignedIntegerFromRange:(NSRange)range {
-  NSAssert(range.location + range.length < self.length, @"Range out of bounds");
-  NSUInteger number = 0;
-  /* FIXME shift to LSB */
-  [self getBytes:&number range:range];
-  return number;
-}
-
 @end
 
 @implementation KPKOTPGenerator
 
-+ (NSData *)HMACOTPWithKey:(NSData *)key counter:(uint64_t)counter {
+- (instancetype)init {
+  self = [super init];
+  if(self) {
+    _hashAlgorithm = KPKOTPHashAlgorithmSha1;
+    _key = [NSData.data copy]; // use an empty key;
+    _type = KPKOTPGeneratorHmacOTP;
+    _timeBase = 0;
+    _timeSlice = 30;
+    _time = 0;
+    _counter = 0;
+    _numberOfDigits = 6;
+  }
+  return self;
+}
+
+- (NSData *)data {
+  if(![self _validateOptions]) {
+    return NSData.data;
+  }
+  if(self.type == KPKOTPGeneratorTOTP) {
+    self.counter = floor((self.time - self.timeBase) / self.timeSlice);
+  }
+  return [self _HMACOTPWithKey:self.key counter:self.counter algorithm:self.hashAlgorithm];
+}
+
+- (NSString *)string {
+  NSData *data = self.data;
+  if(data.length == 0) {
+    return @""; // invalid data
+  }
+  NSUInteger decimal = data.unsignedInteger % kKPKOTPPinDigitModulo[self.numberOfDigits];
+  return [NSString stringWithFormat:@"%0*ld", (int)self.numberOfDigits, (unsigned long)decimal];
+}
+
+- (BOOL)_validateOptions {
+  BOOL valid = (self.numberOfDigits >= 1 &&
+                self.numberOfDigits <= 8 &&
+                self.key.length > 0
+                );
+  
+  switch (self.type) {
+    case KPKOTPGeneratorHmacOTP:
+      break;
+    case KPKOTPGeneratorTOTP:
+      break;
+    case KPKOTPGeneratorSteamOTP:
+      valid = NO;
+    default:
+      valid = NO;
+  }
+  return valid;
+}
+
+- (NSData *)_HMACOTPWithKey:(NSData *)key counter:(uint64_t)counter algorithm:(KPKOTPHashAlgorithm)algorithm {
   // ensure we use big endian
   uint64_t beCounter = CFSwapInt64HostToBig(counter);
-  uint8_t mac[CC_SHA1_DIGEST_LENGTH];
-  CCHmac(kCCHmacAlgSHA1, key.bytes, key.length, &beCounter, sizeof(uint64_t), mac);
+  
+  uint8_t digestLenght = CC_SHA1_DIGEST_LENGTH;
+  CCHmacAlgorithm hashAlgorithm = kCCHmacAlgSHA1;
+  switch(algorithm) {
+    case KPKOTPHashAlgorithmSha1:
+      break; // nothing to do
+    case KPKOTPHashAlgorithmSha256:
+      hashAlgorithm = kCCHmacAlgSHA256;
+      digestLenght = CC_SHA256_DIGEST_LENGTH;
+      break;
+    case KPKOTPHashAlgorithmSha512:
+      hashAlgorithm = kCCHmacAlgSHA512;
+      digestLenght = CC_SHA512_DIGEST_LENGTH;
+      break;
+    default:
+      // should not happen
+      return nil;
+      break;
+  }
+  
+  uint8_t mac[digestLenght];
+  CCHmac(hashAlgorithm, key.bytes, key.length, &beCounter, sizeof(uint64_t), mac);
   
   /* offset is lowest 4 bit on last byte */
-  uint8_t offset = (mac[CC_SHA1_DIGEST_LENGTH - 1] & 0xf);
+  uint8_t offset = (mac[digestLenght - 1] & 0x0f);
   
   uint8_t otp[4];
   otp[0] = mac[offset] & 0x7f;
   otp[1] = mac[offset + 1];
   otp[2] = mac[offset + 2];
   otp[3] = mac[offset + 3];
-
-  return [NSData dataWithBytes:&otp length:sizeof(uint32_t)];
   
+  return [NSData dataWithBytes:&otp length:sizeof(uint32_t)];
 }
-+ (NSData *)TOTPWithKey:(NSData *)key time:(NSTimeInterval)time slice:(NSUInteger)slice base:(NSUInteger)base {
-  uint64_t counter = floor((time - base) / slice);
-  return [self HMACOTPWithKey:key counter:counter];
-}
+
 
 @end
